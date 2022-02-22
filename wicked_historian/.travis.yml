@@ -1,0 +1,14 @@
+language: python
+sudo: false
+
+install:
+  - pip install coverage coveralls tox
+script:
+  - tox
+after_success:
+  - coveralls
+
+env:
+  - TOXENV=py36
+  - TOXENV=py38
+  - TOXENV=py310

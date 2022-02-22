@@ -1,0 +1,11 @@
+[run]
+branch = True
+source = wicked_historian
+
+[report]
+omit = */testsproject/*
+exclude_lines =
+    pragma: no cover
+
+[html]
+directory = coverage
